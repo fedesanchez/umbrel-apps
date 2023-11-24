@@ -23,7 +23,7 @@ export POSTGRES_PORT="5432"
 # API Proxy - Configuration for the Kong Reverse proxy.
 ############
 
-export KONG_HTTP_PORT="8000"
+export KONG_HTTP_PORT="8008"
 export KONG_HTTPS_PORT="8443"
 
 
@@ -39,11 +39,11 @@ export PGRST_DB_SCHEMAS="public,storage,graphql_public"
 ############
 
 ## General
-export SITE_URL="http://localhost:3000"
+export SITE_URL="http://localhost:3008"
 export ADDITIONAL_REDIRECT_URLS=
 export JWT_EXPIRY="3600"
 export DISABLE_SIGNUP="false"
-export API_EXTERNAL_URL="http://localhost:8000"
+export API_EXTERNAL_URL="http://localhost:8008"
 
 ## Mailer Config
 export MAILER_URLPATHS_CONFIRMATION="/auth/v1/verify"
@@ -75,7 +75,7 @@ export STUDIO_DEFAULT_PROJECT="Default Project"
 
 export STUDIO_PORT=3000
 # replace if you intend to use Studio outside of localhost
-export SUPABASE_PUBLIC_URL="http://localhost:8000"
+export SUPABASE_PUBLIC_URL="http://localhost:8008"
 
 # Enable webp support
 export IMGPROXY_ENABLE_WEBP_DETECTION="true"
